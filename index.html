@@ -6,7 +6,7 @@
         content="Pitch Deck">
   <meta name="keywords" content="Pitch Deck">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pitch Deck</title>
+  <title>Multimodal Foundation Modeling</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -86,23 +86,31 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Our Mission</h2>
         <div class="content has-text-justified">
-          <ul class="disc">
-            <li>Build a Next-Generation Multimodal Ecosystem
-              <ul class="circle">
-              <li>We develop new data collection pipelines to gather temporally aligned multimodal data. We not only process common data like 2D or mono audio; we also process data that enables immersive experiences, such as 4D and spatial audio.</li>
-              <li>We design new model architectures to process this multimodal data. Our system can reason, retrieve, generate, and edit multimodal content.</li>
-              <li>Our models enable human-perception-like experiences for content creation, XR/gaming, and robotics.</li>
-              </ul>
-            </li>
-            <li>Competitive Moat
-              <ul class="circle">
-              <li>Not training-free: we train and fine-tune models for superior quality.</li>
-              <li>We define new representations for different data types.</li>
-              <li>Well-established pipelines for multimodal data generation and cleaning.</li>
-              <li>A foundation model with multimodal inputs and outputs, with native support for iterative multimodal editing.</li>
-              </ul>
-            </li>
-          </ul>
+          <p style="font-size: 1.1rem; line-height: 1.7;">
+            <strong>Our Mission:</strong> Build a human-like multimodal system spanning vision, audio, touch, taste, and smell with joint perception, reusable memory, and coherent control—so it can align signals in parallel, reason over long horizons, and act consistently in real-world, interactive settings.
+          </p>
+          
+          <div style="margin-top: 2rem;">
+            <h3 class="title is-4">Joint Perception (audio–video foundation + tactile moat)</h3>
+            <p style="margin-bottom: 1.5rem;">
+              For audio and video, we've collected a large-scale corpus of long-form, in-the-wild videos with aligned audio and metadata, purpose-built to support multimodal planning, retrieval, and generation. Beyond audio and video, we have something uniquely defensible: a large-scale, curated dataset that synchronizes egocentric video, full-hand tactile force maps, and accurate hand pose across diverse real-world environments—something no existing public or commercial dataset provides. This is supported by a reproducible hardware and data-collection pipeline, including a scalable full-hand tactile glove and robust cross-device synchronization. On top of the data, we have benchmarks, evaluation protocols, and trained multimodal representations that demonstrate how touch grounds perception and action.
+            </p>
+
+            <h3 class="title is-4">Reusable Memory (scalable experience library)</h3>
+            <p style="margin-bottom: 1.5rem;">
+              Our NeurIPS-accepted work shows how to synthesize high-quality short-form outputs directly from raw, real-world video clips. We treat these clips as reusable memory—a growing library of grounded experiences the system can reference, recombine, and adapt to new contexts at scale.
+            </p>
+
+            <h3 class="title is-4">Coherent Control (unified multimodal editing)</h3>
+            <p style="margin-bottom: 1.5rem;">
+              We developed a proprietary architecture for simultaneous audio-video editing, treating modalities as one coupled stream rather than separate tracks. This enables controllable, consistent edits where changes in motion, events, or structure stay temporally and semantically aligned across modalities.
+            </p>
+
+            <h3 class="title is-4">Spatial Presence (3D perception and generation, in progress)</h3>
+            <p style="margin-bottom: 1.5rem;">
+              We are developing models on advanced signals like binaural/spatial audio, enabling physically grounded 3D soundscapes. This strengthens the system's sense of "where" events occur and supports richer world modeling beyond flat 2D content.
+            </p>
+          </div>
 
         </div>
       </div>
@@ -122,28 +130,7 @@
     <!-- Related Links and Works. -->
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Why us?</h2>
-        <div class="content has-text-justified">
-          <ul class="disc">
-            <li>An end-to-end, trainable multimodal generation and editing engine; a proof-of-concept paper is coming soon.</li>
-            <li>A foundation model with multimodal inputs and outputs, with native support for interactive sessions.</li>
-            <li>Our team has diverse expertise in audio, video, music, and NLP, with papers accepted at NeurIPS, ICLR, ISMIR, KDD, and ICASSP.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Related Links and Works. -->
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Multimodal Data For Creatiave Generation</h2>
+        <h2 class="title is-3">Reusable Memory (Scalable Experience Library)</h2>
         <div class="content has-text-justified">
           <p>
             We curate paired, long to short multimodal data for film, with clean, time-aligned tracks for dialogue, music, and visuals. These pairs enable high-fidelity generation and distillation from long footage into polished short-form assets while preserving temporal synchronization and providing supervision to learn temporal correspondence in film settings.
@@ -299,10 +286,10 @@
     <!-- Related Links and Works. -->
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Multimodal Paired Data for Creative Assistance</h2>
+        <h2 class="title is-3">Coherent Control (Unified Multimodal Editing)</h2>
         <div class="content has-text-justified">
           <p>
-            Our foundation model can support multimodal Input and multimodal output to have a better understanding of your contents and facilitate iterative editing to create new pairs to train more creative and personalized tasks.
+            Our foundation model can support multimodal input and multimodal output to have a better understanding of your contents and facilitate iterative editing to create new pairs to train more creative and personalized tasks.
           </p>
 
           <!-- Audiovisual Highlight Section -->
@@ -346,9 +333,28 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Related Links and Works. -->
+  </div>
+</section>
 
-          <!-- 2D 360 Video to Spatio Audio Section -->
-          <h3 class="title is-4">2D 360 Video to Spatio Audio</h3>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Spatial Presence (3D Perception and Generation)</h2>
+        <div class="content has-text-justified">
+          <p>
+            We are developing models on advanced signals like binaural/spatial audio, enabling physically grounded 3D soundscapes. This strengthens the system's sense of "where" events occur and supports richer world modeling beyond flat 2D content.
+          </p>
+
+          <!-- 2D 360 Video to Spatial Audio Demo -->
+          <h3 class="title is-4">2D 360 Video to Spatial Audio</h3>
           <div class="columns is-centered">
             <div class="column">
               <div class="content">
@@ -362,7 +368,6 @@
         </div>
       </div>
     </div>
-    <!--/ Related Links and Works. -->
   </div>
 </section>
 
