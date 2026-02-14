@@ -409,7 +409,7 @@
 
         <div class="content has-text-justified">
           <p>
-            Our downstream task showcases an immersive streaming platform that converts ordinary video into real-time multimodal experiences. The system synchronizes visual understanding, spatial audio, and haptic feedback so users can move beyond passive watching and experience content as interactive, responsive media.
+            Our downstream task showcases an immersive streaming platform that transforms ordinary video into real-time multimodal experiences. The system synchronizes visual understanding, spatial audio, and haptic feedback so users can move beyond passive watching and experience content as interactive, responsive media.
           </p>
           <p>
             As scenes evolve, the model captures motion, impact, rhythm, and environmental transitions, then maps them to tightly aligned feedback channels. By jointly modeling video, audio, and tactile signals over time, the platform maintains temporal coherence and delivers interactions that feel consistent and natural.
@@ -419,15 +419,29 @@
           </p>
 
           <h3 class="title is-4">Live Demo</h3>
-          <p><strong>Before:</strong> <code>https://youtu.be/JWUfzduW4ss</code></p>
-          <p><strong>After:</strong> <code>https://youtu.be/jxdmsv1229Y</code></p>
 
-          <div class="columns is-centered">
+          <div class="columns is-variable is-6">
+            <!-- Before -->
             <div class="column">
+              <h4 class="title is-5 has-text-centered">Before</h4>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/JWUfzduW4ss"
+                  title="Before Demo"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <!-- After -->
+            <div class="column">
+              <h4 class="title is-5 has-text-centered">After</h4>
               <div class="video-container">
                 <iframe
                   src="https://www.youtube.com/embed/jxdmsv1229Y"
-                  title="Immersive Streaming Demo"
+                  title="After Demo"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen>
@@ -436,6 +450,7 @@
             </div>
           </div>
           <!-- /Demo -->
+
         </div>
       </div>
     </div>
