@@ -2,11 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Pitch Deck">
-  <meta name="keywords" content="Pitch Deck">
+  <meta name="description" content="Pulato — Multimodal Foundation Modeling">
+  <meta name="keywords" content="Pulato, Multimodal AI, Foundation Model, Audio-Video, Spatial Audio, Tactile AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Multimodal Foundation Modeling</title>
+  <title>Pulato — Multimodal Foundation Modeling</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -27,51 +26,73 @@
 </head>
 <body>
 
-<section class="hero">
-  <div class="hero-body" style="padding-bottom: 0rem;">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Pitch Deck</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://wx83.github.io/">Weihan Xu</a>,
-              <a href="https://iftrush.github.io/">Kan Jen Cheng</a>,
-              <a href="https://rayxsong.com/">Ray Song</a>
-            </span>
-          </div>
-
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block">EECS, UC Berkeley</span>
-
-          </div> -->
-
-
-            </div>
-
-          </div>
-        </div>
+<!-- ===== Navbar ===== -->
+<nav class="navbar is-fixed-top is-white" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#home">
+        <span class="company-logo">Pulato</span>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMain" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#vision">Vision</a>
+        <a class="navbar-item" href="#mission">Mission</a>
+        <a class="navbar-item" href="#technology">Technology</a>
+        <a class="navbar-item" href="#team">Team</a>
+        <a class="navbar-item" href="#contact">
+          <span class="button is-primary is-small">Contact Us</span>
+        </a>
       </div>
     </div>
   </div>
-</section>
+</nav>
 
 
-<!-- Featured Video Section -->
-<section class="hero is-light">
+<!-- ===== Hero ===== -->
+<section class="hero is-fullheight-with-navbar pulato-hero" id="home">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-centered">Our Vision</h2>
-          <div class="video-embed" style="margin-top: 1.5rem;">
-            <iframe
-              src="https://www.youtube.com/embed/jxdmsv1229Y"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              style="width: 100%; aspect-ratio: 16 / 9; border: 0;">
-            </iframe>
-          </div>
+    <div class="container has-text-centered">
+      <h1 class="title is-1 has-text-white" style="font-family: 'Google Sans', sans-serif; font-size: 3.5rem; letter-spacing: -1px;">Pulato</h1>
+      <p class="is-size-4 has-text-grey-lighter" style="margin-top: 0.5rem; font-family: 'Google Sans', sans-serif;">Multimodal Foundation Modeling</p>
+      <p class="has-text-grey-light is-size-5" style="max-width: 640px; margin: 1.75rem auto 2.5rem; line-height: 1.7;">
+        Building AI that perceives, remembers, and acts across vision, audio, and touch — the way humans do.
+      </p>
+      <div class="buttons is-centered">
+        <a href="#vision" class="button is-primary is-medium">See Our Vision</a>
+        <a href="#technology" class="button is-medium hero-outline-btn">Explore Technology</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot has-text-centered" style="padding-bottom: 2rem;">
+    <a href="#vision" class="has-text-grey-light scroll-hint">
+      <i class="fas fa-chevron-down fa-lg"></i>
+    </a>
+  </div>
+</section>
+
+
+<!-- ===== Vision ===== -->
+<section class="section section-light" id="vision">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2 has-text-centered">Our Vision</h2>
+        <p class="has-text-grey has-text-centered is-size-5" style="margin-bottom: 2rem;">
+          A unified system that sees, hears, and feels the world
+        </p>
+        <div class="video-embed" style="margin-top: 1.5rem;">
+          <iframe
+            src="https://www.youtube.com/embed/jxdmsv1229Y"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px;">
+          </iframe>
         </div>
       </div>
     </div>
@@ -79,58 +100,91 @@
 </section>
 
 
-<section class="section">
+<!-- ===== Mission ===== -->
+<section class="section" id="mission">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Our Mission</h2>
+        <h2 class="title is-2">Our Mission</h2>
+        <p class="has-text-grey is-size-5" style="margin-bottom: 2.5rem;">Four pillars that define how we build</p>
         <div class="content has-text-justified">
           <p style="font-size: 1.1rem; line-height: 1.7;">
             <strong>Our Mission:</strong> Build a human-like multimodal system spanning vision, audio, touch, taste, and smell with joint perception, reusable memory, and coherent control—so it can align signals in parallel, reason over long horizons, and act consistently in real-world, interactive settings.
           </p>
-          
-          <div style="margin-top: 2rem;">
-            <h3 class="title is-4">Joint Perception (audio–video foundation + tactile moat)</h3>
-            <p style="margin-bottom: 1.5rem;">
-              For audio and video, we've collected a large-scale corpus of long-form, in-the-wild videos with aligned audio and metadata, purpose-built to support multimodal planning, retrieval, and generation. Beyond audio and video, we have something uniquely defensible: a large-scale, curated dataset that synchronizes egocentric video, full-hand tactile force maps, and accurate hand pose across diverse real-world environments—something no existing public or commercial dataset provides. This is supported by a reproducible hardware and data-collection pipeline, including a scalable full-hand tactile glove and robust cross-device synchronization. On top of the data, we have benchmarks, evaluation protocols, and trained multimodal representations that demonstrate how touch grounds perception and action.
-            </p>
 
-            <h3 class="title is-4">Reusable Memory (scalable experience library)</h3>
-            <p style="margin-bottom: 1.5rem;">
-              Our NeurIPS-accepted work shows how to synthesize high-quality short-form outputs directly from raw, real-world video clips. We treat these clips as reusable memory—a growing library of grounded experiences the system can reference, recombine, and adapt to new contexts at scale.
-            </p>
+          <div style="margin-top: 2.5rem;">
+            <div class="mission-pillar">
+              <h3 class="title is-4">
+                <span class="pillar-tag">01</span>
+                Joint Perception
+                <span class="has-text-grey is-size-6 has-text-weight-normal"> — audio–video foundation + tactile moat</span>
+              </h3>
+              <p style="margin-bottom: 1.5rem;">
+                For audio and video, we've collected a large-scale corpus of long-form, in-the-wild videos with aligned audio and metadata, purpose-built to support multimodal planning, retrieval, and generation. Beyond audio and video, we have something uniquely defensible: a large-scale, curated dataset that synchronizes egocentric video, full-hand tactile force maps, and accurate hand pose across diverse real-world environments—something no existing public or commercial dataset provides. This is supported by a reproducible hardware and data-collection pipeline, including a scalable full-hand tactile glove and robust cross-device synchronization. On top of the data, we have benchmarks, evaluation protocols, and trained multimodal representations that demonstrate how touch grounds perception and action.
+              </p>
+            </div>
 
-            <h3 class="title is-4">Coherent Control (unified multimodal editing)</h3>
-            <p style="margin-bottom: 1.5rem;">
-              We developed a proprietary architecture for simultaneous audio-video editing, treating modalities as one coupled stream rather than separate tracks. This enables controllable, consistent edits where changes in motion, events, or structure stay temporally and semantically aligned across modalities.
-            </p>
+            <div class="mission-pillar">
+              <h3 class="title is-4">
+                <span class="pillar-tag">02</span>
+                Reusable Memory
+                <span class="has-text-grey is-size-6 has-text-weight-normal"> — scalable experience library</span>
+              </h3>
+              <p style="margin-bottom: 1.5rem;">
+                Our NeurIPS-accepted work shows how to synthesize high-quality short-form outputs directly from raw, real-world video clips. We treat these clips as reusable memory—a growing library of grounded experiences the system can reference, recombine, and adapt to new contexts at scale.
+              </p>
+            </div>
 
-            <h3 class="title is-4">Spatial Presence (3D perception and generation, in progress)</h3>
-            <p style="margin-bottom: 1.5rem;">
-              We are developing models on advanced signals like binaural/spatial audio, enabling physically grounded 3D soundscapes. This strengthens the system's sense of "where" events occur and supports richer world modeling beyond flat 2D content.
-            </p>
+            <div class="mission-pillar">
+              <h3 class="title is-4">
+                <span class="pillar-tag">03</span>
+                Coherent Control
+                <span class="has-text-grey is-size-6 has-text-weight-normal"> — unified multimodal editing</span>
+              </h3>
+              <p style="margin-bottom: 1.5rem;">
+                We developed a proprietary architecture for simultaneous audio-video editing, treating modalities as one coupled stream rather than separate tracks. This enables controllable, consistent edits where changes in motion, events, or structure stay temporally and semantically aligned across modalities.
+              </p>
+            </div>
+
+            <div class="mission-pillar">
+              <h3 class="title is-4">
+                <span class="pillar-tag">04</span>
+                Spatial Presence
+                <span class="has-text-grey is-size-6 has-text-weight-normal"> — 3D perception and generation</span>
+              </h3>
+              <p style="margin-bottom: 1.5rem;">
+                We are developing models on advanced signals like binaural/spatial audio, enabling physically grounded 3D soundscapes. This strengthens the system's sense of "where" events occur and supports richer world modeling beyond flat 2D content.
+              </p>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
 
+<!-- ===== Technology ===== -->
+<div id="technology"></div>
+
+<section class="section section-light">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered" style="margin-bottom: 3rem;">
+      <h2 class="title is-2">Technology</h2>
+      <p class="has-text-grey is-size-5">See our core capabilities in action</p>
+    </div>
+  </div>
+</section>
 
 
-
-
-
+<!-- Joint Perception -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Related Links and Works. -->
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Joint Perception for Audio-Video Learning</h2>
+        <div class="tech-section-label">01 — Joint Perception</div>
+        <h2 class="title is-3">Audio-Video Learning</h2>
         <div class="content has-text-justified">
           <p>
             We curate paired, long to short multimodal data for film, with clean, time-aligned tracks for dialogue, music, and visuals. These pairs enable high-fidelity generation and distillation from long footage into polished short-form assets while preserving temporal synchronization and providing supervision to learn temporal correspondence in film settings.
@@ -150,10 +204,6 @@
             <tr>
               <th>Input Video</th>
               <td>
-                <a href="https://www.youtube.com/embed/WfXRTZdyIe0?start=97" target="_blank" rel="noopener">
-                  
-                </a>
-                <!-- Optional inline preview; delete this block if you don't want it -->
                 <div class="video-embed">
                   <iframe
                     src="https://www.youtube.com/embed/WfXRTZdyIe0?start=97"
@@ -189,8 +239,7 @@
             </tr>
           </table>
 
-          <!-- Joint Perception Demo -->
-          <h3 class="title is-4">Joint Perception Demo: Teaser Generation</h3>
+          <h3 class="title is-4" style="margin-top: 2rem;">Demo: Teaser Generation</h3>
           <p style="margin-bottom: 1rem;">
             We run joint perception on audiovisual learning through a downstream task: teaser generation.
           </p>
@@ -198,10 +247,6 @@
             <tr>
               <th>Input Video</th>
               <td>
-                <a href="https://www.youtube.com/embed/89xTTczbv0E?start=120" target="_blank" rel="noopener">
-                  
-                </a>
-                <!-- Optional inline preview; delete this block if you don't want it -->
                 <div class="video-embed">
                   <iframe
                     src="https://www.youtube.com/embed/89xTTczbv0E?start=120"
@@ -212,9 +257,8 @@
               </td>
             </tr>
           </table>
-        
-          <div class="columns is-centered">
-            <!-- Visual Effects. -->
+
+          <div class="columns is-centered" style="margin-top: 1rem;">
             <div class="column">
               <div class="content">
                 <video id="" controls="" muted="" loop="" playsinline="" height="100%">
@@ -222,7 +266,6 @@
                 </video>
               </div>
             </div>
-            <!--/ Visual Effects. -->
             <div class="column">
               <div class="content">
                 <video id="" controls="" muted="" loop="" playsinline="" height="100%">
@@ -235,39 +278,30 @@
         </div>
       </div>
     </div>
-    <!--/ Related Links and Works. -->
   </div>
 </section>
 
 
-
-
-<section class="section">
+<!-- Reusable Memory -->
+<section class="section section-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Reusable Memory (Scalable Experience Library)</h2>
+        <div class="tech-section-label">02 — Reusable Memory</div>
+        <h2 class="title is-3">Scalable Experience Library</h2>
         <div class="content has-text-justified">
           <p>
             In this example, we show how we can retrieve memory from existing footage. With our multimodal foundation model, we can retrieve memory in different forms, such as video, audio, and more.
           </p>
 
-          <!-- Downstream Task Demo -->
-          <h3 class="title is-4">Short-Form Video Generation with Grounded Memory</h3>
+          <h3 class="title is-4" style="margin-top: 2rem;">Demo: Short-Form Video Generation with Grounded Memory</h3>
           <p style="margin-bottom: 1rem;">
             Our model retrieves memory from existing footage and incorporates it into the generation process to create coherent short-form content.
-          </p>
-          <p style="margin-bottom: 1rem;">
-            We run joint perception on audiovisual learning through a downstream task: teaser generation.
           </p>
           <table class="assets">
             <tr>
               <th>Input Video</th>
               <td>
-                <a href="https://www.youtube.com/embed/agij_IxGjCI?start=107" target="_blank" rel="noopener">
-                  
-                </a>
-                <!-- Optional inline preview; delete this block if you don't want it -->
                 <div class="video-embed">
                   <iframe
                     src="https://www.youtube.com/embed/agij_IxGjCI?start=107"
@@ -278,9 +312,8 @@
               </td>
             </tr>
           </table>
-        
-          <div class="columns is-centered">
-            <!-- Visual Effects. -->
+
+          <div class="columns is-centered" style="margin-top: 1rem;">
             <div class="column">
               <div class="content">
                 <video id="" controls="" muted="" loop="" playsinline="" height="100%">
@@ -288,7 +321,6 @@
                 </video>
               </div>
             </div>
-            <!--/ Visual Effects. -->
             <div class="column">
               <div class="content">
                 <video id="" controls="" muted="" loop="" playsinline="" height="100%">
@@ -301,28 +333,23 @@
         </div>
       </div>
     </div>
-    <!--/ Related Links and Works. -->
   </div>
 </section>
 
 
-
-
-
-
+<!-- Coherent Control -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Related Links and Works. -->
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Coherent Control (Unified Multimodal Editing)</h2>
+        <div class="tech-section-label">03 — Coherent Control</div>
+        <h2 class="title is-3">Unified Multimodal Editing</h2>
         <div class="content has-text-justified">
           <p>
-            Our foundation model can support multimodal input and multimodal output to have a better understanding of your contents and facilitate iterative editing to create new pairs to train more creative and personalized tasks.
+            Our foundation model supports multimodal input and output for a better understanding of your content, facilitating iterative editing to create new pairs for training more creative and personalized tasks.
           </p>
 
-          <!-- Audiovisual Highlight Section -->
-          <h3 class="title is-4">Audiovisual Highlight</h3>
+          <h3 class="title is-4" style="margin-top: 2rem;">Demo: Audiovisual Highlight</h3>
           <div class="columns is-centered">
             <div class="column">
               <div class="content">
@@ -342,8 +369,7 @@
             </div>
           </div>
 
-          <!-- Audiovisual Inpaint Section -->
-          <h3 class="title is-4">Audiovisual Addition</h3>
+          <h3 class="title is-4" style="margin-top: 2rem;">Demo: Audiovisual Addition</h3>
           <div class="columns is-centered">
             <div class="column">
               <div class="content">
@@ -365,27 +391,25 @@
         </div>
       </div>
     </div>
-    <!--/ Related Links and Works. -->
   </div>
 </section>
 
 
-
-
-<section class="section">
+<!-- Spatial Presence -->
+<section class="section section-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Spatial Presence (3D Perception and Generation)</h2>
+        <div class="tech-section-label">04 — Spatial Presence</div>
+        <h2 class="title is-3">3D Perception and Generation</h2>
         <div class="content has-text-justified">
           <p>
             We are developing models on advanced signals like binaural/spatial audio, enabling physically grounded 3D soundscapes. This strengthens the system's sense of "where" events occur and supports richer world modeling beyond flat 2D content.
           </p>
 
-          <!-- 2D 360 Video to Spatial Audio Demo -->
-          <h3 class="title is-4">2D 360 Video to Spatial Audio</h3>
+          <h3 class="title is-4" style="margin-top: 2rem;">Demo: 2D 360 Video to Spatial Audio</h3>
           <div class="columns is-centered">
-            <div class="column">
+            <div class="column is-three-quarters">
               <div class="content">
                 <video controls="" muted="" loop="" playsinline="" height="100%">
                   <source src="./static/video/0FB9jMXMP8A_23.mp4" type="video/mp4">
@@ -400,16 +424,18 @@
   </div>
 </section>
 
-<!-- New Downstream Task Section -->
+
+<!-- Downstream Task -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Downstream Task: Immersive Streaming Experience Platform</h2>
+        <div class="tech-section-label">Downstream Application</div>
+        <h2 class="title is-3">Immersive Streaming Experience Platform</h2>
 
         <div class="content has-text-justified">
           <p>
-            Our downstream task showcases an immersive streaming platform that transforms ordinary video into real-time multimodal experiences. The system synchronizes visual understanding, spatial audio, and haptic feedback so users can move beyond passive watching and experience content as interactive, responsive media.
+            Our downstream application showcases an immersive streaming platform that transforms ordinary video into real-time multimodal experiences. The system synchronizes visual understanding, spatial audio, and haptic feedback so users can move beyond passive watching and experience content as interactive, responsive media.
           </p>
           <p>
             As scenes evolve, the model captures motion, impact, rhythm, and environmental transitions, then maps them to tightly aligned feedback channels. By jointly modeling video, audio, and tactile signals over time, the platform maintains temporal coherence and delivers interactions that feel consistent and natural.
@@ -418,10 +444,9 @@
             This demo highlights the core capability of our multimodal foundation model: bridging perception and action. It interprets live or streaming content, generates synchronized multimodal outputs, and adapts feedback behavior based on user context and device constraints.
           </p>
 
-          <h3 class="title is-4">Live Demo</h3>
+          <h3 class="title is-4" style="margin-top: 2rem;">Live Demo</h3>
 
           <div class="columns is-variable is-6">
-            <!-- Before -->
             <div class="column">
               <h4 class="title is-5 has-text-centered">Before</h4>
               <div class="video-container">
@@ -434,8 +459,6 @@
                 </iframe>
               </div>
             </div>
-
-            <!-- After -->
             <div class="column">
               <h4 class="title is-5 has-text-centered">After</h4>
               <div class="video-container">
@@ -449,7 +472,6 @@
               </div>
             </div>
           </div>
-          <!-- /Demo -->
 
         </div>
       </div>
@@ -458,31 +480,118 @@
 </section>
 
 
+<!-- ===== Team ===== -->
+<section class="section section-light" id="team">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered" style="margin-bottom: 3rem;">
+      <h2 class="title is-2">Our Team</h2>
+      <p class="has-text-grey is-size-5">The people building the future of multimodal AI</p>
+    </div>
+    <div class="columns is-centered is-variable is-6">
+
+      <!-- Weihan Xu -->
+      <div class="column is-4">
+        <div class="card team-card has-text-centered">
+          <div class="card-content">
+            <div class="team-avatar" style="background: #4286f4;">W</div>
+            <h3 class="title is-5" style="margin-bottom: 0.25rem;">Weihan Xu</h3>
+            <p class="has-text-grey is-size-6" style="margin-bottom: 1.25rem;">Co-Founder · Multimodal AI Research</p>
+            <a href="https://wx83.github.io/" class="button is-small is-light is-rounded" target="_blank" rel="noopener">
+              <span class="icon is-small"><i class="fas fa-globe"></i></span>
+              <span>Website</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kan Jen Cheng -->
+      <div class="column is-4">
+        <div class="card team-card has-text-centered">
+          <div class="card-content">
+            <div class="team-avatar" style="background: #7c3aed;">K</div>
+            <h3 class="title is-5" style="margin-bottom: 0.25rem;">Kan Jen Cheng</h3>
+            <p class="has-text-grey is-size-6" style="margin-bottom: 1.25rem;">Co-Founder · Audio-Visual Learning</p>
+            <a href="https://iftrush.github.io/" class="button is-small is-light is-rounded" target="_blank" rel="noopener">
+              <span class="icon is-small"><i class="fas fa-globe"></i></span>
+              <span>Website</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ray Song -->
+      <div class="column is-4">
+        <div class="card team-card has-text-centered">
+          <div class="card-content">
+            <div class="team-avatar" style="background: #059669;">R</div>
+            <h3 class="title is-5" style="margin-bottom: 0.25rem;">Ray Song</h3>
+            <p class="has-text-grey is-size-6" style="margin-bottom: 1.25rem;">Co-Founder · Foundation Models</p>
+            <a href="https://rayxsong.com/" class="button is-small is-light is-rounded" target="_blank" rel="noopener">
+              <span class="icon is-small"><i class="fas fa-globe"></i></span>
+              <span>Website</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/pdf/2508.17623">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/Berkeley-Speech-Group/emo-reasoning" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
+<!-- ===== Contact ===== -->
+<section class="section" id="contact">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered" style="margin-bottom: 3rem;">
+      <h2 class="title is-2">Contact</h2>
+      <p class="has-text-grey is-size-5">Get in touch with the Pulato team</p>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>. You are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website.
-          </p>
+        <div class="columns is-variable is-8 has-text-centered">
+          <div class="column">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h4 class="title is-5">Email</h4>
+            <a href="mailto:contact@pulato.ai" class="has-text-grey is-size-6">contact@pulato.ai</a>
+          </div>
+          <div class="column">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h4 class="title is-5">GitHub</h4>
+            <a href="https://github.com/Berkeley-Speech-Group/emo-reasoning" class="has-text-grey is-size-6" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ===== Footer ===== -->
+<footer class="footer pulato-footer">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <span class="company-logo" style="color: white; font-size: 1.5rem;">Pulato</span>
+        <p class="has-text-grey-light is-size-7" style="margin-top: 0.4rem;">Building the future of multimodal AI</p>
+      </div>
+      <div class="column has-text-right">
+        <a class="icon-link footer-icon-link" href="https://arxiv.org/pdf/2508.17623" target="_blank" title="Research Paper">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link footer-icon-link" href="https://github.com/Berkeley-Speech-Group/emo-reasoning" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 1rem 0;">
+    <p class="has-text-grey-light is-size-7 has-text-centered">
+      © 2025 Pulato. &nbsp;
+      This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="has-text-grey-light" style="text-decoration: underline;">CC BY-SA 4.0</a> License.
+    </p>
   </div>
 </footer>
 
