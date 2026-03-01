@@ -44,6 +44,20 @@ body {
   letter-spacing: -0.5px;
 }
 
+.navbar-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+  filter: invert(1);
+  opacity: 0.9;
+}
+
 /* ===== Hero (Home) ===== */
 .pulato-hero {
   background:
