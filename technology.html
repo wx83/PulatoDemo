@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Pulato Technology — Live Demos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technology — Pulato</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <span class="company-logo">Pulato</span>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMain" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item is-active" href="technology.html">Technology</a>
+        <a class="navbar-item" href="team.html">Team</a>
+        <a class="navbar-item" href="contact.html">
+          <span class="button is-primary is-small" style="border-radius: 6px; font-family: 'Inter', sans-serif; font-weight: 600;">Contact</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Page Header -->
+<div class="page-header">
+  <span class="page-header-label">Demos & Capabilities</span>
+  <h1 class="title">Technology</h1>
+  <p class="subtitle">Our core capabilities in action</p>
+</div>
+
+
+<!-- Nav pills -->
+<div style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; padding: 0.85rem 1.5rem; position: sticky; top: 60px; z-index: 10;">
+  <div class="container" style="display: flex; gap: 0.5rem; overflow-x: auto; white-space: nowrap;">
+    <a href="#perception" class="pill-link">01 Joint Perception</a>
+    <a href="#memory" class="pill-link">02 Reusable Memory</a>
+    <a href="#control" class="pill-link">03 Coherent Control</a>
+    <a href="#spatial" class="pill-link">04 Spatial Presence</a>
+    <a href="#downstream" class="pill-link">Downstream App</a>
+  </div>
+</div>
+
+<style>
+  .pill-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #6b7280;
+    padding: 0.35rem 0.85rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    border: 1px solid transparent;
+  }
+  .pill-link:hover {
+    background: #fff;
+    color: #3b82f6;
+    border-color: #dbeafe;
+  }
+</style>
+
+
+<!-- 01 Joint Perception -->
+<section class="section section-white" id="perception">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="tech-section-label">01 — Joint Perception</div>
+        <h2 class="title is-3">Audio-Video Learning</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem; line-height: 1.7;">
+          We curate paired, long-to-short multimodal data for film, with clean, time-aligned tracks for dialogue, music, and visuals. These pairs enable high-fidelity generation and distillation from long footage into polished short-form assets while preserving temporal synchronization.
+        </p>
+
+        <table class="assets">
+          <tr>
+            <th>Input Video</th>
+            <td>
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/WfXRTZdyIe0?start=97"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Music Track</th>
+            <td><audio controls style="width:100%"><source src="./static/audio/music_intro.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Dialogue Track</th>
+            <td><audio controls style="width:100%"><source src="./static/audio/dialog_intro.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Sound Effect Track</th>
+            <td><audio controls style="width:100%"><source src="./static/audio/effect_intro.wav" type="audio/wav"></audio></td>
+          </tr>
+        </table>
+
+        <h3 class="title is-4" style="margin-top: 2.5rem; margin-bottom: 0.5rem;">Demo: Teaser Generation</h3>
+        <p style="color: #6b7280; margin-bottom: 1.25rem; line-height: 1.7;">
+          Joint audiovisual learning applied to teaser generation — distilling a long video into a compelling short-form clip.
+        </p>
+        <table class="assets" style="margin-bottom: 1.25rem;">
+          <tr>
+            <th>Input Video</th>
+            <td>
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/89xTTczbv0E?start=120"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="columns is-centered">
+          <div class="column"><video controls muted loop playsinline><source src="./static/video/teasergen-pt.mp4" type="video/mp4"></video></div>
+          <div class="column"><video controls muted loop playsinline><source src="./static/video/teagergen-lr.mp4" type="video/mp4"></video></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="tech-divider">
+
+<!-- 02 Reusable Memory -->
+<section class="section section-gray" id="memory">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="tech-section-label">02 — Reusable Memory</div>
+        <h2 class="title is-3">Scalable Experience Library</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem; line-height: 1.7;">
+          Our NeurIPS-accepted work treats existing footage as reusable memory — a growing library of grounded experiences the system can reference, recombine, and adapt to new contexts at scale.
+        </p>
+
+        <h3 class="title is-4" style="margin-bottom: 0.5rem;">Demo: Short-Form Video Generation</h3>
+        <p style="color: #6b7280; margin-bottom: 1.25rem; line-height: 1.7;">
+          The model retrieves memory from existing footage and incorporates it into generation to produce coherent short-form content.
+        </p>
+        <table class="assets" style="margin-bottom: 1.25rem;">
+          <tr>
+            <th>Input Video</th>
+            <td>
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/agij_IxGjCI?start=107"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="columns is-centered">
+          <div class="column"><video controls muted loop playsinline><source src="./static/video/regen_idq_tv.mp4" type="video/mp4"></video></div>
+          <div class="column"><video controls muted loop playsinline><source src="./static/video/regen_idq_t.mp4" type="video/mp4"></video></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="tech-divider">
+
+<!-- 03 Coherent Control -->
+<section class="section section-white" id="control">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="tech-section-label">03 — Coherent Control</div>
+        <h2 class="title is-3">Unified Multimodal Editing</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem; line-height: 1.7;">
+          A proprietary architecture for simultaneous audio-video editing — treating modalities as one coupled stream so changes in motion, events, or structure remain temporally and semantically aligned.
+        </p>
+
+        <h3 class="title is-4" style="margin-bottom: 1rem;">Demo: Audiovisual Highlight</h3>
+        <div class="columns is-centered">
+          <div class="column">
+            <h4 class="title is-6 has-text-grey" style="margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;">Without Highlight</h4>
+            <video controls muted loop playsinline><source src="./static/video/board_input.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column">
+            <h4 class="title is-6 has-text-grey" style="margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;">With Highlight</h4>
+            <video controls muted loop playsinline><source src="./static/video/board_output_with_audio.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+
+        <h3 class="title is-4" style="margin-top: 2.5rem; margin-bottom: 1rem;">Demo: Audiovisual Addition</h3>
+        <div class="columns is-centered">
+          <div class="column">
+            <h4 class="title is-6 has-text-grey" style="margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;">Without Seagull</h4>
+            <video controls muted loop playsinline><source src="./static/video/waves_no_seagulls_video.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column">
+            <h4 class="title is-6 has-text-grey" style="margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;">With Seagull</h4>
+            <video controls muted loop playsinline><source src="./static/video/waves_with_seagull.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="tech-divider">
+
+<!-- 04 Spatial Presence -->
+<section class="section section-gray" id="spatial">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="tech-section-label">04 — Spatial Presence</div>
+        <h2 class="title is-3">3D Perception and Generation</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem; line-height: 1.7;">
+          Models trained on binaural and spatial audio, enabling physically grounded 3D soundscapes that strengthen the system's sense of where events occur in the world.
+        </p>
+
+        <h3 class="title is-4" style="margin-bottom: 1rem;">Demo: 2D 360° Video → Spatial Audio</h3>
+        <div class="columns is-centered">
+          <div class="column is-three-quarters">
+            <video controls muted loop playsinline><source src="./static/video/0FB9jMXMP8A_23.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="tech-divider">
+
+<!-- Downstream Application -->
+<section class="section section-white" id="downstream">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="tech-section-label">Downstream Application</div>
+        <h2 class="title is-3">Immersive Streaming Platform</h2>
+        <p style="color: #6b7280; margin-bottom: 1rem; line-height: 1.7;">
+          Our downstream application transforms ordinary video into real-time multimodal experiences. The system synchronizes visual understanding, spatial audio, and haptic feedback so users can move beyond passive watching.
+        </p>
+        <p style="color: #6b7280; margin-bottom: 2rem; line-height: 1.7;">
+          As scenes evolve, the model captures motion, impact, rhythm, and environmental transitions, then maps them to tightly aligned feedback channels — maintaining temporal coherence across modalities.
+        </p>
+
+        <h3 class="title is-4" style="margin-bottom: 1rem;">Live Demo</h3>
+        <div class="columns is-variable is-5">
+          <div class="column">
+            <h4 class="title is-6 has-text-grey" style="margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;">Before</h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/JWUfzduW4ss" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="title is-6 has-text-grey" style="margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;">After</h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/jxdmsv1229Y" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="pulato-footer">
+  <div class="container">
+    <div class="columns is-vcentered" style="margin-bottom: 0;">
+      <div class="column">
+        <span class="company-logo">Pulato</span>
+        <p class="footer-tagline">Building the future of multimodal AI</p>
+      </div>
+      <div class="column has-text-right footer-nav">
+        <a href="index.html">Home</a>
+        <a href="technology.html">Technology</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">
+      © 2025 Pulato. &nbsp;Licensed under
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
